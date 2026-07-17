@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mars Track Technology Pvt. Ltd.</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,Arial,sans-serif;
+}
+
+body{
+background:#eef3f8;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#0f172a,#1d4ed8);
+color:white;
+padding:35px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.25);
+}
+
+header h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+header h3{
+font-weight:400;
+letter-spacing:1px;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:40px auto;
+}
+
+.card{
+background:white;
+padding:25px;
+margin-bottom:25px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.card h2{
+color:#0f172a;
+margin-bottom:15px;
+border-left:6px solid #2563eb;
+padding-left:10px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.status{
+font-size:18px;
+margin:10px 0;
+}
+
+.online{
+color:green;
+font-weight:bold;
+}
+
+.info{
+font-size:17px;
+line-height:1.8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+table th{
+background:#1d4ed8;
+color:white;
+padding:12px;
+}
+
+table td{
+padding:12px;
+border:1px solid #ddd;
+text-align:center;
+}
+
+footer{
+margin-top:50px;
+padding:20px;
+background:#0f172a;
+color:white;
+text-align:center;
+}
+
+.badge{
+display:inline-block;
+padding:8px 16px;
+background:#16a34a;
+color:white;
+border-radius:30px;
+font-weight:bold;
+margin-top:10px;
+}
+
+.architecture{
+background:#f8fafc;
+padding:20px;
+border-radius:10px;
+font-family:monospace;
+font-size:15px;
+white-space:pre-line;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Mars Track Technology Pvt. Ltd.</h1>
+
+<h3>Cloud Infrastructure Monitoring Platform</h3>
+
+<div class="badge">
+Production Monitoring Environment
+</div>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Project Overview</h2>
+
+<p class="info">
+
+This monitoring platform has been deployed on AWS to demonstrate a production-style DevOps infrastructure. The solution continuously monitors server health, system performance, and infrastructure metrics using Prometheus, Node Exporter, and Grafana.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<h2>Application Server</h2>
+
+<p class="status">Status :
+<span class="online">ONLINE</span></p>
+
+<ul class="info">
+
+<li>Ubuntu Linux</li>
+
+<li>Nginx Web Server</li>
+
+<li>Node Exporter</li>
+
+<li>Hosted on AWS EC2</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Monitoring Server</h2>
+
+<p class="status">Status :
+<span class="online">ONLINE</span></p>
+
+<ul class="info">
+
+<li>Prometheus</li>
+
+<li>Grafana</li>
+
+<li>Metrics Collection</li>
+
+<li>AWS EC2</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Infrastructure Architecture</h2>
+
+<div class="architecture">
+
+Internet
+
+↓
+
+AWS EC2
+
+↓
+
+Application Server
+
+↓
+
+Nginx
+
+↓
+
+Node Exporter
+
+↓
+
+Prometheus Server
+
+↓
+
+Grafana Dashboard
+
+↓
+
+Infrastructure Monitoring
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Technology Stack</h2>
+
+<table>
+
+<tr>
+
+<th>Technology</th>
+
+<th>Purpose</th>
+
+</tr>
+
+<tr>
+
+<td>AWS EC2</td>
+
+<td>Cloud Infrastructure</td>
+
+</tr>
+
+<tr>
+
+<td>Ubuntu Linux</td>
+
+<td>Operating System</td>
+
+</tr>
+
+<tr>
+
+<td>Nginx</td>
+
+<td>Web Server</td>
+
+</tr>
+
+<tr>
+
+<td>Node Exporter</td>
+
+<td>System Metrics Collection</td>
+
+</tr>
+
+<tr>
+
+<td>Prometheus</td>
+
+<td>Monitoring & Time-Series Database</td>
+
+</tr>
+
+<tr>
+
+<td>Grafana</td>
+
+<td>Visualization Dashboard</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>Project Objectives</h2>
+
+<ul class="info">
+
+<li>Deploy a highly available Linux web server on AWS.</li>
+
+<li>Collect real-time system metrics using Node Exporter.</li>
+
+<li>Monitor infrastructure using Prometheus.</li>
+
+<li>Visualize performance through Grafana dashboards.</li>
+
+<li>Demonstrate production-style DevOps monitoring practices.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<footer>
+
+<p><strong>Mars Track Technology Pvt. Ltd.</strong></p>
+
+<p>Cloud Infrastructure Monitoring Platform</p>
+
+<p>Developed as a DevOps Internship Project</p>
+
+</footer>
+
+</body>
+
+</html>
